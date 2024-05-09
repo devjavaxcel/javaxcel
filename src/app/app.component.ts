@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HomeComponent } from "./home/home.component";
+import { AboutComponent } from "./about/about.component";
+import { ComingSoonComponent } from "./coming-soon/coming-soon.component";
+
+@Component({
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterOutlet, HomeComponent, AboutComponent, ComingSoonComponent]
+})
+export class AppComponent {
+  title = 'javaxcel';
+}
